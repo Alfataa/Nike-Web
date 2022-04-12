@@ -199,6 +199,8 @@ footer h3{
     color:white;
 }
 
+/* Responsive */
+
 @media (max-width: 576px) {
     .container {
         padding: 20px !important;
