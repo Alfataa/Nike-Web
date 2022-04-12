@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(#e1eec3, #f05053);
+    font-family: 'Poppins', sans-serif;
+}
+/* Layout */
+
+.container {
+    width: 100%;
+    padding-left: 170px;
+    padding-right: 150px;
+}
+
+/* Utilities */
+.p-l{
+    padding-left:20px;
+}
+
+.p-r{
+    padding-right: 20px;
+}
+
+/* Navbar */
+
+header {
+    background-color: rgb(245, 68, 68);
+    box-shadow: 0 0 30px rgba(172, 172, 172, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 999;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 26px;
+}
+.nav-item li {
+    align-items: center;
+	display: inline;
+	padding:0;
+	margin: 0 20px;
+}
+.nav-item li a {
+    text-decoration: none;
+    color: white;
+}
+
+#my_checkbox {
+    display: none;
+}
+
+.collapse-btn {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Home */
+
+.container-menu {
+    background: rgb(255, 255, 255);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(118, 118, 118, 0.1);
+    margin: 100px auto 10px;
+    padding: 60px;
+}
+
+.judul{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(245, 68, 68);
+}
+
+
+.gambar-utama {
+    width: 100%;
+    border-radius: 30px !important;
+}
+
+.konten{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.konten-kanan {
+    width: 30%;
+}
+
+.konten-kiri {
+    width: 70%;
+}
+
+.menu{
+    padding: 30px;
+    margin-top: -20px;
+}
+
+.menu h3{
+    font-size: 28px;
+    text-transform: capitalize;
+    color: rgb(245, 68, 68);
+}
+
+.menu p{
+    font-size: 14px;
+    color: rgb(44, 61, 249);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.menu span{
+    width: 100%;
+    height: 30px;
+    background: #fa9969;
+    border-radius: 6px;
+    font-size: 18px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-penjelasan{
+    width: 100%;
+}
+
+.menu-penjelasan img{
+    width: 15%;
+    float: left;
+    border-radius: 5px;
+    margin: 0 2% 1% 0;
+}
+
+.menu-penjelasan p{
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: justify;
+}
+
+.menu-penjelasan2{
+    width: 100%;
+}
+
+.menu-penjelasan2 img{
+    width: 30%;
+    float: left;
+    border-radius: 5px !important;
+    margin: 0 4% 0 0;
+}
+
+.menu-penjelasan2 p{
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: justify;
+}
+
+.menu a{
+    width: 100%;
+    height: 40px;
+    background: coral;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    color: white;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 30px;
+}
+
+footer h3{
+    width: 100%;
+    text-align: center;
+    color:white;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px !important;
+    }
+
+    .container-menu {
+        margin: 55px 0 0 0;
+        padding: 5%;
+    }
+
+    .konten{
+        display: block;
+        flex-direction: unset;
+    }
+
+    .konten-kanan {
+        width: 100%;
+    }
+    
+    .konten-kiri {
+        width: 100%;
+    }
+
+    .judul{
+        font-size: 30px;
+    }
+
+    .gambar-utama {
+        border-radius: 10px !important;
+        margin-top: -20px !important;
+        margin-bottom: -10px !important;
+    }
+
+    .menu {
+        padding: 5% !important;
+    }
+
+    .menu h3 {
+        font-size: 20px !important;
+    }
+
+    .menu p {
+        font-size: 14px !important;
+    }
+
+    .menu-penjelasan img {
+        width: 30%;
+        margin: 2% 5% 0 0 !important;
+    }
+
+    .menu{
+        width: 100%;
+        margin-top: 0 !important;
+    }
+
+    footer h3 {
+        font-size: 15px !important;
+    }
+
+    header {
+        padding: 0 22px !important;
+    }
+    
+    nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav h2 {
+        color: white;
+        font-size: 20px;
+    }
+    
+    #show {
+        display: none;
+    }
+
+    .collapse-btn {
+        display: block;
+    }
+
+    #my_checkbox:checked ~ #show{
+        display: block;
+    }
+
+    .nav-item {
+        width: 100%;
+        background-color: rgb(217, 55, 55);
+        position: fixed;
+        height: 205px;
+        left: 0;
+        top: 0;
+        margin-top: 48px;
+    }
+
+    .nav-item li {
+        align-items: center;
+        display: block;
+        padding:0;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
